@@ -4,12 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Asif's Portfolio</title>
+    <!-- bootstrap links -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <!-- Magnific Popup CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- favicon starts -->
     <link
       rel="icon"
       type="image/png"
@@ -28,14 +36,18 @@
       href="assets/images/favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="assets/images/favicon/site.webmanifest" />
+    <!-- favicon ends -->
+
+    <!-- external css -->
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <!-- external css ends -->
   </head>
-  <body>
+  <body class="bodycolor text-white">
     <!--NAV BAR STARTS -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand text-white" href="#">ASIF KHAN</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -48,36 +60,28 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex"></ul>
+          <form class="d-flex" role="search">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#carouselExampleControls"
+                  >Skills</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </form>
         </div>
       </div>
     </nav>
@@ -85,28 +89,62 @@
 
     <!--SECTION 1 STARTS (INTRODUCTION)-->
     <div class="container">
-    <div class="row bg-info text-center">
-      <div class="col-sm-12 col-md-6 col-lg-6">image</div>
-      <div class="col-sm-12 col-md-6 col-lg-6">content</div>
-    </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+          <img
+            src="https://theme.nanoit.biz/tf-nickberg-demo/nick-berg/assets/img/me.png"
+            class="img-fluid"
+          />
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center" id="aling">
+          <div
+            class="container w-25 bg-warning rounded-pill text-center"
+            id="hellobox"
+          >
+            <p>Hello There!</p>
+          </div>
+          <h1>I'M Asif Khan</h1>
+          <h3>Frontend & MERN Stack Developer</h3>
+        </div>
+      </div>
     </div>
     <!--SECTION 1 ENDS -->
 
     <!--SECTION 2 STARTS (ABOUT) -->
-    <div class="container">
-    <div class="row bg-warning text-center">
-      <div class="col-sm-12 col-md-6 col-lg-6">content</div>
-      <div class="col-sm-12 col-md-6 col-lg-6">image</div>
-    </div>
+    <div class="container" id="about">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6" id="aling2">
+          <h1>About Me</h1>
+          <p class="textaling">
+            I’m a passionate web developer skilled in HTML, CSS, and JavaScript,
+            with hands-on experience building full-stack applications using the
+            MERN stack (MongoDB, Express.js, React.js, and Node.js). I focus on
+            creating clean, responsive user interfaces and robust backend
+            systems. From designing pixel-perfect layouts to building dynamic,
+            data-driven web apps, I enjoy turning ideas into interactive digital
+            solutions.
+          </p>
+          <a href="https://example.com" class="btn btn-warning">
+            <i class="bi bi-download"></i>Download CV
+          </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 text-center">
+          <img
+            src="https://theme.nanoit.biz/tf-nickberg-demo/nick-berg/assets/img/about.png"
+            class="img-fluid"
+          />
+        </div>
+      </div>
     </div>
     <!--SECTION 2 ENDS -->
 
     <!--SECTION 3 STARTS (SLIDE) -->
-    <div class="container"
+    <div
       id="carouselExampleControls"
-      class="carousel carousel-dark slide"
+      class="carousel carousel-dark slide text-center text-white"
       data-bs-ride="carousel"
     >
+      <h1>What i can do for you</h1>
       <div class="carousel-inner">
         <!-- Carousel Item 1 -->
         <div class="carousel-item active">
@@ -118,7 +156,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -128,7 +171,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -138,14 +186,19 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Carousel Item 2 -->
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="card-wrapper container-sm d-flex justify-content-around">
             <div class="card" style="width: 18rem">
               <img
@@ -154,7 +207,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -164,7 +222,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -174,14 +237,19 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
           </div>
         </div>
 
         <!-- Carousel Item 3 -->
-        <div class="carousel-item">
+        <div class="carousel-item active">
           <div class="card-wrapper container-sm d-flex justify-content-around">
             <div class="card" style="width: 18rem">
               <img
@@ -190,7 +258,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -200,7 +273,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
             <div class="card" style="width: 18rem">
@@ -210,7 +288,12 @@
                 alt="..."
               />
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Devlopment</h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Distinctio ipsa laudantium incidunt iste! Ipsum inventore
+                  nobis voluptatum ipsa similique qui.\
+                </p>
               </div>
             </div>
           </div>
@@ -242,10 +325,87 @@
 
     <!--SECTION 4 STARTS (PROGRESS)-->
     <div class="container">
-      <h2>Column 1</h2>
+      <h1 class="text-center">My skills</h1>
 
-      <div class="row">
-        <div class="col-md-3 col-sm-6">
+      <div class="row" id="space">
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">50</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
+          <div class="progress blue">
+            <span class="progress-left">
+              <span class="progress-bar"></span>
+            </span>
+            <span class="progress-right">
+              <span class="progress-bar"></span>
+            </span>
+            <div class="progress-value">90%</div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 p-5">
           <div class="progress blue">
             <span class="progress-left">
               <span class="progress-bar"></span>
@@ -261,9 +421,9 @@
     <!-- SECTION 4 ENDS -->
 
     <!--SECTION 5 STARTS (MyEducation) -->
-    <div class="container">
-      <div class="row">
-        <h1>section</h1>
+    <div class="container" id="experience">
+      <div class="row text-center">
+        <h1>My Education & Experience</h1>
       </div>
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-6">card-1</div>
@@ -277,368 +437,349 @@
     <!--SECTION 5 ENDS -->
 
     <!--SECTION-6 STARTS (RecentWork) -->
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <ul
-            class="nav justify-content-center"
-            role="tablist"
-            id="customersCats"
+    <div class="container my-5" id="portfolio">
+      <ul
+        class="nav justify-content-center mb-4"
+        id="portfolioTabs"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="featured-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#featuredSection"
+            type="button"
+            role="tab"
+            aria-controls="featuredSection"
+            aria-selected="true"
           >
-            <li class="nav-item">
+            Feature
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="education-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#educationSection"
+            type="button"
+            role="tab"
+            aria-controls="educationSection"
+            aria-selected="false"
+          >
+            Education
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="healthcare-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#healthSection"
+            type="button"
+            role="tab"
+            aria-controls="healthSection"
+            aria-selected="false"
+          >
+            Healthcare
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="nonprofit-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#nonProfitSection"
+            type="button"
+            role="tab"
+            aria-controls="nonProfitSection"
+            aria-selected="false"
+          >
+            Non-Profit
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="private-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#privateSection"
+            type="button"
+            role="tab"
+            aria-controls="privateSection"
+            aria-selected="false"
+          >
+            Private Sector
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="public-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#publicSection"
+            type="button"
+            role="tab"
+            aria-controls="publicSection"
+            aria-selected="false"
+          >
+            Public Sector
+          </button>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="portfolioTabContent">
+        <!-- Featured -->
+        <div
+          class="tab-pane fade show active"
+          id="featuredSection"
+          role="tabpanel"
+          aria-labelledby="featured-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
               <a
-                class="nav-link active show"
-                href="#featuredSection"
-                id="featured"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="featuredSection"
-                aria-selected="true"
-                >Feature</a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
               >
-            </li>
-            <li class="nav-item">
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
+                  alt="Feature Image 1"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
               <a
-                class="nav-link"
-                href="#educationSection"
-                id="education"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="educationSection"
-                aria-selected="false"
-                >Education</a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
               >
-            </li>
-            <li class="nav-item">
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
+                  alt="Feature Image 2"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
               <a
-                class="nav-link"
-                href="#healthSection"
-                id="healthcare"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="healthSection"
-                aria-selected="false"
-                >Healthcare</a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
               >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#nonProfitSection"
-                id="nonprofit"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="nonProfitSection"
-                aria-selected="false"
-                >Non-Profit</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#privateSection"
-                id="private"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="privateSection"
-                aria-selected="false"
-                >Private Sector</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#publicSection"
-                id="public"
-                data-toggle="tab"
-                role="tab"
-                aria-controls="publicSection"
-                aria-selected="false"
-                >Public Sector</a
-              >
-            </li>
-          </ul>
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
+                  alt="Feature Image 3"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- row-->
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="tab-content" id="catsContent">
-            <div
-              class="tab-pane fade show active"
-              id="featuredSection"
-              role="tabpanel"
-              aria-lRobotoledby="featured"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-              <!-- row-->
+
+        <!-- Education -->
+        <div
+          class="tab-pane fade"
+          id="educationSection"
+          role="tabpanel"
+          aria-labelledby="education-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
+                  alt="Education Image 1"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-            <div
-              class="tab-pane fade"
-              id="educationSection"
-              role="tabpanel"
-              aria-lRobotoledby="education"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
-              <!-- row-->
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
+                  alt="Education Image 2"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-            <div
-              class="tab-pane fade"
-              id="healthSection"
-              role="tabpanel"
-              aria-lRobotoledby="healthcare"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/5.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/5.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <!-- Healthcare -->
+        <div
+          class="tab-pane fade"
+          id="healthSection"
+          role="tabpanel"
+          aria-labelledby="healthcare-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
+                  alt="Healthcare Image 1"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-            <div
-              class="tab-pane fade"
-              id="nonProfitSection"
-              role="tabpanel"
-              aria-lRobotoledby="nonprofit"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/5.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/5.jpg"
+                  alt="Healthcare Image 2"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-            <div
-              class="tab-pane fade"
-              id="privateSection"
-              role="tabpanel"
-              aria-lRobotoledby="private"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/7.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/7.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/8.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/8.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
+                  alt="Healthcare Image 3"
+                  class="img-fluid"
+                />
+              </a>
             </div>
-            <div
-              class="tab-pane fade"
-              id="publicSection"
-              role="tabpanel"
-              aria-lRobotoledby="public"
-            >
-              <div class="row">
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-                <div class="col-sm-6 col-md-4">
-                  <a
-                    class="with-caption image-popup-vertical-fit"
-                    title="Caption: Click on image to move to the next one"
-                    href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
-                    target="_blank"
-                  >
-                    <img
-                      src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/4.jpg"
-                      alt="Portfolio Item"
-                      class="img-fluid"
-                    />
-                  </a>
-                </div>
-              </div>
+          </div>
+        </div>
+
+        <!-- Non-Profit -->
+        <div
+          class="tab-pane fade"
+          id="nonProfitSection"
+          role="tabpanel"
+          aria-labelledby="nonprofit-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/1.jpg"
+                  alt="Non-Profit Image 1"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/3.jpg"
+                  alt="Non-Profit Image 2"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Private Sector -->
+        <div
+          class="tab-pane fade"
+          id="privateSection"
+          role="tabpanel"
+          aria-labelledby="private-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/6.jpg"
+                  alt="Private Image 1"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/7.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/7.jpg"
+                  alt="Private Image 2"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/8.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/8.jpg"
+                  alt="Private Image 3"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Public Sector -->
+        <div
+          class="tab-pane fade"
+          id="publicSection"
+          role="tabpanel"
+          aria-labelledby="public-tab"
+        >
+          <div class="row g-3">
+            <div class="col-sm-6 col-md-4">
+              <a
+                class="image-popup-vertical-fit"
+                href="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/solodev/bootstrap-tabs-portfolio/master/2.jpg"
+                  alt="Public Image 1"
+                  class="img-fluid"
+                />
+              </a>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <a href="https://asifkhan5770.github.io/Bootstrap/">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                  alt="Public Image 2"
+                  class="img-fluid"
+                />
+              </a>
             </div>
           </div>
         </div>
       </div>
-      <!--row-->
     </div>
-    <!--container-->
-    <div class="container my-5">
+    <!--SECTION 6 ENDS -->
+
+    <!--SECTION-7 STARTS (GET IN TOUCH) -->
+    <div class="container my-5" id="contact">
       <div class="row justify-content-center">
-        <div class="col-lg-9">
+        <div class="col-lg-9 text-white">
           <h1 class="mb-3">Contact Us</h1>
           <form>
             <div class="row g-3">
@@ -715,42 +856,39 @@
         </div>
       </div>
     </div>
-    <!--SECTION 6 ENDS -->
+    <!--SECTION-7 ENDS -->
 
-    <!--SECTION-7 STARTS (GET IN TOUCH) -->
-    <div class="row">
-      <div class="col-sm-12 col-md-6 col-lg-6">content</div>
-      <div class="col-sm-12 col-md-6 col-lg-6">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113517.06982531316!2d80.86019101713232!3d26.848725350855695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1753336558026!5m2!1sen!2sin"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <!--SECTION-8 STARTS (Map) -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">content</div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113517.06982531316!2d80.86019101713232!3d26.848725350855695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1753336558026!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
     </div>
-    <!--SECTION-7 ENDS-->
+    <!--SECTION-8 ENDS-->
 
     <footer></footer>
 
-    <!-- ✅ jQuery must come FIRST -->
+    <!-- jQuery (required for Magnific Popup) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- ✅ Then Magnific Popup (depends on jQuery) -->
-    <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"></script>
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- ✅ Then your custom script -->
+    <!-- Magnific Popup JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <!-- Init Magnific Popup -->
     <script src="assets/js/portfolio.js"></script>
-
-    <!-- ✅ Then Bootstrap or anything else -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-      crossorigin="anonymous"
-    ></script>
-
   </body>
 </html>

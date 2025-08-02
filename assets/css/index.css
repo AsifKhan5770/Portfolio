@@ -75,7 +75,7 @@
     border-color: #d10b4f;
 }
 .progress.blue .progress-left .progress-bar{
-    animation: loading-2 1.5s linear forwards 1.8s;
+    animation: loading-3 1.5s linear forwards 1.8s;
 }
 
 /*  Progress bar animations */
@@ -133,4 +133,7 @@
 /* Progress bar mediaquairy */
 @media only screen and (max-width: 990px){
     .progress{ margin-bottom: 20px; }
+}
+.menu-right{
+    float: right;
 }
